@@ -1,10 +1,11 @@
-## Project 1 WEB STACK IMPLEMENTATION(LAMP STACK)IN AWS
+# Project 1 WEB STACK IMPLEMENTATION(LAMP STACK)IN AWS
 
 Creating AWS account with usersname: Olanrewaju
 Connecting to EC2
 ![Alt text](Apache2.png)
 
  *Connecting to insance(ubuntu web server)*.
+
 ![Alt text](UbuntuWeb.png)
 
  #### Step 1
@@ -93,7 +94,7 @@ Creating new file named index.php
 `vim /var/www/projectlamp/index.php`.
    ![Alt text](Index.php.png)
 
-Thanks
+The End
 
 
 
