@@ -2,23 +2,27 @@
 
 Creating AWS account with usersname: Olanrewaju
 Connecting to EC2
-![Alt text](Apache2.png)
+
+![Alt text](Images/Apache2.png)
+
 
  *Connecting to insance(ubuntu web server)*.
 
-![Alt text](UbuntuWeb.png)
+![Alt text](Images/UbuntuWeb.png)
 
  #### Step 1
 
  *Update list of packages in package manager*.
 
   `sudo apt update`
-![Alt text](sudoUpdate.png)
+
+![Alt text](Images/sudoUpdate.png)
   
  *Run apache2 package installation*.
 
  `sudo apt install apache2`.
-![Alt text](Apache2.png)
+
+![Alt text](Images/Apache2.png)
  
  *Opened TCP PORT 80*.
 
@@ -27,16 +31,20 @@ Connecting to EC2
  *Installing MySQL*.
 
   `sudo apt install mysql-server`.
-![Alt text](mysql-server.png)
+
+![Alt text](Images/mysql-server.png)
   
   *Connecting to Mysql*
-![Alt text](mysqlOutput.png)
+
+![Alt text](Images/mysqlOutput.png)
   
    *Setting password for root user using mysql_native_password*.
-![Alt text](ExtMysql.png)
+
+![Alt text](Images/ExtMysql.png)
   
    *Mysql interactive scripting*
-![Alt text](Mysql22.png)
+
+![Alt text](Images/Mysql22.png)
 
  #### Step 3
 
@@ -45,17 +53,20 @@ Connecting to EC2
 *Also installing PHP dependencies at the same time*.
 
  `sudo apt install php libapache2-mod-php php-mysql`.
-![Alt text](PHP.png)
-     
 
- ![PHPversion!](/assets/images/PHPversion.png "PHPversion")
+![Alt text](Images/PHP.png)
+
+   ![Alt text](Images/PHPversion.png)  
+
 
 #### Step 4
 
 Create directory for projectlamp
 
  `sudo mkdir /var/www/projectlamp`.
-![Alt text](projectlamp.png)
+
+![Alt text](Images/projectlamp.png)
+
 
 Assiging ownership of the directory
 
@@ -64,12 +75,16 @@ Assiging ownership of the directory
 Creating new file configuration in Apache
 
  `sudo vi /etc/apache2/sites-available/projectlamp.conf`.
-![Alt text](NewFile.png)
+
+![Alt text](Images/NewFile.png)
+
 
 Enable the new virtual host
 
 `sudo a2ensite projectlamp`.
-![Alt text](EnableNewVirtual.png)
+
+![Alt text](Images/EnableNewVirtual.png)
+
 
 Reload Apache
 
@@ -85,14 +100,16 @@ Changing behaviour
 
 `sudo vim /etc/apache2/mods-enabled/dir.conf`.
 
-![Alt text](BehaviourChange.png)
+![Alt text](Images/BehaviourChange.png)
+
 
 `sudo systemctl reload apache2`.
 
 Creating new file named index.php
 
 `vim /var/www/projectlamp/index.php`.
-   ![Alt text](Index.php.png)
+
+  ![Alt text](Images/Index.php.png)
 
 The End
 
